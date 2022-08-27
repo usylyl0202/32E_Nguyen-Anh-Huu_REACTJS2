@@ -1,0 +1,163 @@
+.text-white {
+    padding: 30px 0;
+    font-size: 20px;
+    font-weight: 400;
+    background: rgb(0 0 0 / 72%);
+    margin: 0;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+.body {
+    background-image: url(../../../public/glassesImage/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.body .container {
+    padding-top: 130px;
+}
+
+.glass_model {
+    background-image: url('../../../public/glassesImage/model.jpg');
+    background-position: center top;
+    background-size: cover;
+    height: 400px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.left .glass_card .glass_model img {
+    position: absolute;
+    top: 28%;
+    left: 25%;
+    width: 174px;
+    height: 57px;
+    opacity: 0.7;
+}
+
+.right .glass_card .glass_model img {
+    position: absolute;
+    top: 28%;
+    left: 25%;
+    width: 174px;
+    height: 57px;
+    opacity: 0.9;
+}
+
+.glass_card {
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+}
+
+.glass_infor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(226 119 22 / 40%);
+    width: 100%;
+    color: white;
+    display: block;
+    text-align: left;
+    padding: 0 5px;
+}
+
+.glass_infor h1 {
+    font-size: 20px;
+    color: #5454dc;
+}
+
+.glass_list {
+    background: #fff;
+    margin-top: 40px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.glass_list .row {
+    padding: 10px 30px;
+}
+
+.glass_list .row .glasses-item {
+    align-self: center;
+}
+
+.glass_list .row .glasses-item img {
+    display: block;
+    width: 100%;
+}
+
+.glass_list .row .glasses-item a {
+    display: block;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .container .row .glass_card .glass_model img {
+        top: 25%;
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container .row .glass_card .glass_model img {
+        top: 26%;
+        left: 24%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .glass_model {
+        height: 700px;
+    }
+
+    .container .row .glass_card .glass_model img {
+        top: 26%;
+        left: 21%;
+        width: 290px;
+        height: 92px;
+    }
+
+    .container .row .left {
+        margin-bottom: 50px;
+    }
+
+    .glass_infor h1 {
+        font-size: 30px;
+    }
+
+    .glass_infor p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .glass_model {
+        height: 400px;
+    }
+
+    .container .row .glass_card .glass_model img {
+        top: 26%;
+        left: 21%;
+        width: 172px;
+        height: 57px;
+    }
+
+    .container .row .left,
+    .container .row .right {
+        display: flex;
+        justify-content: center;
+    }
+
+    .glass_card {
+        width: 300px;
+    }
+
+    .glass_infor h1 {
+        font-size: 20px;
+    }
+
+    .glass_infor p {
+        font-size: 15px;
+    }
+}
